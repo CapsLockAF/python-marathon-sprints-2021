@@ -1,0 +1,154 @@
+2021-09-12T09:39:17.7257689Z ##[group]Run actions/checkout@v2
+2021-09-12T09:39:17.7258485Z with:
+2021-09-12T09:39:17.7259190Z   repository: PythonMarathon001/orm-om5-s15-team6
+2021-09-12T09:39:17.7260462Z   token: ***
+2021-09-12T09:39:17.7260985Z   ssh-strict: true
+2021-09-12T09:39:17.7261610Z   persist-credentials: true
+2021-09-12T09:39:17.7262217Z   clean: true
+2021-09-12T09:39:17.7262724Z   fetch-depth: 1
+2021-09-12T09:39:17.7263240Z   lfs: false
+2021-09-12T09:39:17.7263743Z   submodules: false
+2021-09-12T09:39:17.7264280Z ##[endgroup]
+2021-09-12T09:39:17.9852938Z Syncing repository: PythonMarathon001/orm-om5-s15-team6
+2021-09-12T09:39:17.9861101Z ##[group]Getting Git version info
+2021-09-12T09:39:17.9880013Z Working directory is '/home/runner/work/orm-om5-s15-team6/orm-om5-s15-team6'
+2021-09-12T09:39:17.9920499Z [command]/usr/bin/git version
+2021-09-12T09:39:18.0078104Z git version 2.33.0
+2021-09-12T09:39:18.0101915Z ##[endgroup]
+2021-09-12T09:39:18.0107812Z Deleting the contents of '/home/runner/work/orm-om5-s15-team6/orm-om5-s15-team6'
+2021-09-12T09:39:18.0112851Z ##[group]Initializing the repository
+2021-09-12T09:39:18.0116555Z [command]/usr/bin/git init /home/runner/work/orm-om5-s15-team6/orm-om5-s15-team6
+2021-09-12T09:39:18.0191881Z hint: Using 'master' as the name for the initial branch. This default branch name
+2021-09-12T09:39:18.0193200Z hint: is subject to change. To configure the initial branch name to use in all
+2021-09-12T09:39:18.0194249Z hint: of your new repositories, which will suppress this warning, call:
+2021-09-12T09:39:18.0195024Z hint: 
+2021-09-12T09:39:18.0195976Z hint: 	git config --global init.defaultBranch <name>
+2021-09-12T09:39:18.0196716Z hint: 
+2021-09-12T09:39:18.0197659Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2021-09-12T09:39:18.0198909Z hint: 'development'. The just-created branch can be renamed via this command:
+2021-09-12T09:39:18.0199717Z hint: 
+2021-09-12T09:39:18.0200435Z hint: 	git branch -m <name>
+2021-09-12T09:39:18.0210057Z Initialized empty Git repository in /home/runner/work/orm-om5-s15-team6/orm-om5-s15-team6/.git/
+2021-09-12T09:39:18.0223756Z [command]/usr/bin/git remote add origin https://github.com/PythonMarathon001/orm-om5-s15-team6
+2021-09-12T09:39:18.0262466Z ##[endgroup]
+2021-09-12T09:39:18.0263970Z ##[group]Disabling automatic garbage collection
+2021-09-12T09:39:18.0266992Z [command]/usr/bin/git config --local gc.auto 0
+2021-09-12T09:39:18.0303585Z ##[endgroup]
+2021-09-12T09:39:18.0309046Z ##[group]Setting up auth
+2021-09-12T09:39:18.0315530Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-09-12T09:39:18.0348073Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-09-12T09:39:18.0751000Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-09-12T09:39:18.0784709Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-09-12T09:39:18.1015879Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2021-09-12T09:39:18.1062990Z ##[endgroup]
+2021-09-12T09:39:18.1064894Z ##[group]Fetching the repository
+2021-09-12T09:39:18.1071997Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +451ddff3885b4d5c81a34d3c892f16d9f845cd43:refs/remotes/origin/fix_develop
+2021-09-12T09:39:18.4443337Z remote: Enumerating objects: 52, done.        
+2021-09-12T09:39:18.4504667Z remote: Counting objects:   1% (1/52)        
+2021-09-12T09:39:18.4505551Z remote: Counting objects:   3% (2/52)        
+2021-09-12T09:39:18.4506327Z remote: Counting objects:   5% (3/52)        
+2021-09-12T09:39:18.4507038Z remote: Counting objects:   7% (4/52)        
+2021-09-12T09:39:18.4507742Z remote: Counting objects:   9% (5/52)        
+2021-09-12T09:39:18.4508734Z remote: Counting objects:  11% (6/52)        
+2021-09-12T09:39:18.4509426Z remote: Counting objects:  13% (7/52)        
+2021-09-12T09:39:18.4510118Z remote: Counting objects:  15% (8/52)        
+2021-09-12T09:39:18.4510796Z remote: Counting objects:  17% (9/52)        
+2021-09-12T09:39:18.4511490Z remote: Counting objects:  19% (10/52)        
+2021-09-12T09:39:18.4512188Z remote: Counting objects:  21% (11/52)        
+2021-09-12T09:39:18.4512868Z remote: Counting objects:  23% (12/52)        
+2021-09-12T09:39:18.4513558Z remote: Counting objects:  25% (13/52)        
+2021-09-12T09:39:18.4514232Z remote: Counting objects:  26% (14/52)        
+2021-09-12T09:39:18.4516169Z remote: Counting objects:  28% (15/52)        
+2021-09-12T09:39:18.4516984Z remote: Counting objects:  30% (16/52)        
+2021-09-12T09:39:18.4517667Z remote: Counting objects:  32% (17/52)        
+2021-09-12T09:39:18.4518375Z remote: Counting objects:  34% (18/52)        
+2021-09-12T09:39:18.4519098Z remote: Counting objects:  36% (19/52)        
+2021-09-12T09:39:18.4519791Z remote: Counting objects:  38% (20/52)        
+2021-09-12T09:39:18.4520481Z remote: Counting objects:  40% (21/52)        
+2021-09-12T09:39:18.4521166Z remote: Counting objects:  42% (22/52)        
+2021-09-12T09:39:18.4521840Z remote: Counting objects:  44% (23/52)        
+2021-09-12T09:39:18.4522533Z remote: Counting objects:  46% (24/52)        
+2021-09-12T09:39:18.4523279Z remote: Counting objects:  48% (25/52)        
+2021-09-12T09:39:18.4523960Z remote: Counting objects:  50% (26/52)        
+2021-09-12T09:39:18.4524656Z remote: Counting objects:  51% (27/52)        
+2021-09-12T09:39:18.4525327Z remote: Counting objects:  53% (28/52)        
+2021-09-12T09:39:18.4526017Z remote: Counting objects:  55% (29/52)        
+2021-09-12T09:39:18.4526713Z remote: Counting objects:  57% (30/52)        
+2021-09-12T09:39:18.4527387Z remote: Counting objects:  59% (31/52)        
+2021-09-12T09:39:18.4528078Z remote: Counting objects:  61% (32/52)        
+2021-09-12T09:39:18.4530398Z remote: Counting objects:  63% (33/52)        
+2021-09-12T09:39:18.4531162Z remote: Counting objects:  65% (34/52)        
+2021-09-12T09:39:18.4531864Z remote: Counting objects:  67% (35/52)        
+2021-09-12T09:39:18.4532559Z remote: Counting objects:  69% (36/52)        
+2021-09-12T09:39:18.4533243Z remote: Counting objects:  71% (37/52)        
+2021-09-12T09:39:18.4533934Z remote: Counting objects:  73% (38/52)        
+2021-09-12T09:39:18.4534622Z remote: Counting objects:  75% (39/52)        
+2021-09-12T09:39:18.4535304Z remote: Counting objects:  76% (40/52)        
+2021-09-12T09:39:18.4536010Z remote: Counting objects:  78% (41/52)        
+2021-09-12T09:39:18.4536686Z remote: Counting objects:  80% (42/52)        
+2021-09-12T09:39:18.4537386Z remote: Counting objects:  82% (43/52)        
+2021-09-12T09:39:18.4538082Z remote: Counting objects:  84% (44/52)        
+2021-09-12T09:39:18.4538770Z remote: Counting objects:  86% (45/52)        
+2021-09-12T09:39:18.4539485Z remote: Counting objects:  88% (46/52)        
+2021-09-12T09:39:18.4540191Z remote: Counting objects:  90% (47/52)        
+2021-09-12T09:39:18.4540875Z remote: Counting objects:  92% (48/52)        
+2021-09-12T09:39:18.4541574Z remote: Counting objects:  94% (49/52)        
+2021-09-12T09:39:18.4542271Z remote: Counting objects:  96% (50/52)        
+2021-09-12T09:39:18.4542950Z remote: Counting objects:  98% (51/52)        
+2021-09-12T09:39:18.4543651Z remote: Counting objects: 100% (52/52)        
+2021-09-12T09:39:18.4544352Z remote: Counting objects: 100% (52/52), done.        
+2021-09-12T09:39:18.4545116Z remote: Compressing objects:   2% (1/41)        
+2021-09-12T09:39:18.4545871Z remote: Compressing objects:   4% (2/41)        
+2021-09-12T09:39:18.4546605Z remote: Compressing objects:   7% (3/41)        
+2021-09-12T09:39:18.4547354Z remote: Compressing objects:   9% (4/41)        
+2021-09-12T09:39:18.4548100Z remote: Compressing objects:  12% (5/41)        
+2021-09-12T09:39:18.4548831Z remote: Compressing objects:  14% (6/41)        
+2021-09-12T09:39:18.4549753Z remote: Compressing objects:  17% (7/41)        
+2021-09-12T09:39:18.4550502Z remote: Compressing objects:  19% (8/41)        
+2021-09-12T09:39:18.4551226Z remote: Compressing objects:  21% (9/41)        
+2021-09-12T09:39:18.4551976Z remote: Compressing objects:  24% (10/41)        
+2021-09-12T09:39:18.4552729Z remote: Compressing objects:  26% (11/41)        
+2021-09-12T09:39:18.4553688Z remote: Compressing objects:  29% (12/41)        
+2021-09-12T09:39:18.4554440Z remote: Compressing objects:  31% (13/41)        
+2021-09-12T09:39:18.4555196Z remote: Compressing objects:  34% (14/41)        
+2021-09-12T09:39:18.4555927Z remote: Compressing objects:  36% (15/41)        
+2021-09-12T09:39:18.4556678Z remote: Compressing objects:  39% (16/41)        
+2021-09-12T09:39:18.4557464Z remote: Compressing objects:  41% (17/41)        
+2021-09-12T09:39:18.4558187Z remote: Compressing objects:  43% (18/41)        
+2021-09-12T09:39:18.4558938Z remote: Compressing objects:  46% (19/41)        
+2021-09-12T09:39:18.4559698Z remote: Compressing objects:  48% (20/41)        
+2021-09-12T09:39:18.4560421Z remote: Compressing objects:  51% (21/41)        
+2021-09-12T09:39:18.4561164Z remote: Compressing objects:  53% (22/41)        
+2021-09-12T09:39:18.4561904Z remote: Compressing objects:  56% (23/41)        
+2021-09-12T09:39:18.4562633Z remote: Compressing objects:  58% (24/41)        
+2021-09-12T09:39:18.4563380Z remote: Compressing objects:  60% (25/41)        
+2021-09-12T09:39:18.4564103Z remote: Compressing objects:  63% (26/41)        
+2021-09-12T09:39:18.4564845Z remote: Compressing objects:  65% (27/41)        
+2021-09-12T09:39:18.4565595Z remote: Compressing objects:  68% (28/41)        
+2021-09-12T09:39:18.4566325Z remote: Compressing objects:  70% (29/41)        
+2021-09-12T09:39:18.4567067Z remote: Compressing objects:  73% (30/41)        
+2021-09-12T09:39:18.4567813Z remote: Compressing objects:  75% (31/41)        
+2021-09-12T09:39:18.4568538Z remote: Compressing objects:  78% (32/41)        
+2021-09-12T09:39:18.4569726Z remote: Compressing objects:  80% (33/41)        
+2021-09-12T09:39:18.4570482Z remote: Compressing objects:  82% (34/41)        
+2021-09-12T09:39:18.4571205Z remote: Compressing objects:  85% (35/41)        
+2021-09-12T09:39:18.4571950Z remote: Compressing objects:  87% (36/41)        
+2021-09-12T09:39:18.4572693Z remote: Compressing objects:  90% (37/41)        
+2021-09-12T09:39:18.4573412Z remote: Compressing objects:  92% (38/41)        
+2021-09-12T09:39:18.4574155Z remote: Compressing objects:  95% (39/41)        
+2021-09-12T09:39:18.4574890Z remote: Compressing objects:  97% (40/41)        
+2021-09-12T09:39:18.4575633Z remote: Compressing objects: 100% (41/41)        
+2021-09-12T09:39:18.4576408Z remote: Compressing objects: 100% (41/41), done.        
+2021-09-12T09:39:18.4577915Z remote: Total 52 (delta 11), reused 32 (delta 9), pack-reused 0        
+2021-09-12T09:39:18.4579209Z From https://github.com/PythonMarathon001/orm-om5-s15-team6
+2021-09-12T09:39:18.4580690Z  * [new ref]         451ddff3885b4d5c81a34d3c892f16d9f845cd43 -> origin/fix_develop
+2021-09-12T09:39:18.4582285Z ##[endgroup]
+2021-09-12T09:39:18.4583524Z ##[group]Determining the checkout info
+2021-09-12T09:39:18.4584717Z ##[endgroup]
+2021-09-12T09:39:18.4585868Z ##[group]Checking out the ref
+2021-09-12T09:39:18.4587040Z [command]/usr/bin/git checkout --progress --force -B fix_develop refs/remotes/origin/fix_develop
+2021-09-12T09:39:18.4588190Z Switched to a new branch 'fix_develop'
+2021-09-12T09:39:18.4589289Z Branch 'fix_develop' set up to track remote branch 'fix_develop' from 'origin'.
+2021-09-12T09:39:18.4590623Z ##[endgroup]
+2021-09-12T09:39:18.4591438Z [command]/usr/bin/git log -1 --format='%H'
+2021-09-12T09:39:18.4592464Z '451ddff3885b4d5c81a34d3c892f16d9f845cd43'

@@ -1,0 +1,88 @@
+2021-09-12T09:39:18.4679119Z ##[group]Run education/autograding@v1
+2021-09-12T09:39:18.4679687Z with:
+2021-09-12T09:39:18.4680621Z   token: ***
+2021-09-12T09:39:18.4681047Z ##[endgroup]
+2021-09-12T09:39:19.3451943Z 
+2021-09-12T09:39:19.3456849Z ::stop-commands::24d5f29c-da3c-468b-ac4e-2779be914369
+2021-09-12T09:39:19.3458232Z 
+2021-09-12T09:39:19.3460527Z [36m📝 tests[39m
+2021-09-12T09:39:19.3461394Z 
+2021-09-12T09:39:19.3462048Z 
+2021-09-12T09:39:20.9086620Z   Collecting setuptools
+2021-09-12T09:39:20.9527991Z     Downloading setuptools-58.0.4-py3-none-any.whl (816 kB)
+2021-09-12T09:39:21.2053193Z ERROR: launchpadlib 1.10.13 requires testresources, which is not installed.
+2021-09-12T09:39:21.2071686Z   Installing collected packages: setuptools
+2021-09-12T09:39:21.2075188Z     Attempting uninstall: setuptools
+2021-09-12T09:39:21.2078175Z       Found existing installation: setuptools 45.2.0
+2021-09-12T09:39:21.2082258Z       Not uninstalling setuptools at /usr/lib/python3/dist-packages, outside environment /usr
+2021-09-12T09:39:21.2102352Z       Can't uninstall 'setuptools'. No files were found to uninstall.
+2021-09-12T09:39:21.6340999Z   Successfully installed setuptools-58.0.4
+2021-09-12T09:39:23.1679675Z   Collecting pip
+2021-09-12T09:39:23.2620582Z     Using cached pip-21.2.4-py3-none-any.whl (1.6 MB)
+2021-09-12T09:39:23.4933184Z   Installing collected packages: pip
+2021-09-12T09:39:23.4934770Z     Attempting uninstall: pip
+2021-09-12T09:39:23.4959769Z       Found existing installation: pip 20.0.2
+2021-09-12T09:39:23.4962536Z       Not uninstalling pip at /usr/lib/python3/dist-packages, outside environment /usr
+2021-09-12T09:39:23.4964984Z       Can't uninstall 'pip'. No files were found to uninstall.
+2021-09-12T09:39:24.5137326Z   Successfully installed pip-21.2.4
+2021-09-12T09:39:25.8415871Z   Collecting asgiref==3.2.10
+2021-09-12T09:39:25.8434454Z     Downloading asgiref-3.2.10-py3-none-any.whl (19 kB)
+2021-09-12T09:39:25.8436009Z   Collecting coverage==5.3
+2021-09-12T09:39:25.8438058Z     Downloading coverage-5.3-cp38-cp38-manylinux1_x86_64.whl (230 kB)
+2021-09-12T09:39:25.8439056Z   Collecting Django==3.1.1
+2021-09-12T09:39:25.8440124Z     Downloading Django-3.1.1-py3-none-any.whl (7.8 MB)
+2021-09-12T09:39:26.1174131Z   Collecting psycopg2==2.9.1
+2021-09-12T09:39:26.1346889Z     Downloading psycopg2-2.9.1.tar.gz (379 kB)
+2021-09-12T09:39:26.6854727Z   Collecting pytz==2020.1
+2021-09-12T09:39:26.6914592Z     Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+2021-09-12T09:39:26.7366321Z   Collecting sqlparse==0.3.1
+2021-09-12T09:39:26.7453084Z     Downloading sqlparse-0.3.1-py2.py3-none-any.whl (40 kB)
+2021-09-12T09:39:26.7986574Z   Building wheels for collected packages: psycopg2
+2021-09-12T09:39:26.8010993Z     Building wheel for psycopg2 (setup.py): started
+2021-09-12T09:39:35.5107451Z     Building wheel for psycopg2 (setup.py): finished with status 'done'
+2021-09-12T09:39:35.5151472Z     Created wheel for psycopg2: filename=psycopg2-2.9.1-cp38-cp38-linux_x86_64.whl size=556673 sha256=2e8a721bece7ab174e7dabed4b37f4dbba3481bf3a7c0b5dfbd879b4462c1cb3
+2021-09-12T09:39:35.5155616Z     Stored in directory: /root/.cache/pip/wheels/65/eb/f9/74b53754e764a113930b709eb319a3bd5b681889b5ffbf1aab
+2021-09-12T09:39:35.5203080Z   Successfully built psycopg2
+2021-09-12T09:39:35.7034071Z   Installing collected packages: sqlparse, pytz, asgiref, psycopg2, Django, coverage
+2021-09-12T09:39:37.6679513Z   WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2021-09-12T09:39:37.6681652Z   Successfully installed Django-3.1.1 asgiref-3.2.10 coverage-5.3 psycopg2-2.9.1 pytz-2020.1 sqlparse-0.3.1
+2021-09-12T09:39:37.8620642Z   
+2021-09-12T09:39:38.2691317Z   Creating test database for alias 'default'...
+2021-09-12T09:39:38.2694056Z   /usr/local/lib/python3.8/dist-packages/django/db/backends/postgresql/base.py:304: RuntimeWarning: Normally Django will use a connection to the 'postgres' database to avoid running initialization queries against the production database when it's not needed (for example, when running tests). Django was unable to create a connection to the 'postgres' database and will use the first PostgreSQL database instead.
+2021-09-12T09:39:38.2696286Z     warnings.warn(
+2021-09-12T09:39:38.4131597Z   Traceback (most recent call last):
+2021-09-12T09:39:38.4132761Z     File "manage.py", line 22, in <module>
+2021-09-12T09:39:38.4133600Z       main()
+2021-09-12T09:39:38.4134388Z     File "manage.py", line 18, in main
+2021-09-12T09:39:38.4135410Z       execute_from_command_line(sys.argv)
+2021-09-12T09:39:38.4137970Z     File "/usr/local/lib/python3.8/dist-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+2021-09-12T09:39:38.4139538Z       utility.execute()
+2021-09-12T09:39:38.4141410Z     File "/usr/local/lib/python3.8/dist-packages/django/core/management/__init__.py", line 395, in execute
+2021-09-12T09:39:38.4143063Z       self.fetch_command(subcommand).run_from_argv(self.argv)
+2021-09-12T09:39:38.4145261Z     File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/test.py", line 23, in run_from_argv
+2021-09-12T09:39:38.4146729Z       super().run_from_argv(argv)
+2021-09-12T09:39:38.4148572Z     File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 330, in run_from_argv
+2021-09-12T09:39:38.4150095Z       self.execute(*args, **cmd_options)
+2021-09-12T09:39:38.4152005Z     File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 371, in execute
+2021-09-12T09:39:38.4153525Z       output = self.handle(*args, **options)
+2021-09-12T09:39:38.4155485Z     File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/test.py", line 53, in handle
+2021-09-12T09:39:38.4157113Z       failures = test_runner.run_tests(test_labels)
+2021-09-12T09:39:38.4158993Z     File "/usr/local/lib/python3.8/dist-packages/django/test/runner.py", line 695, in run_tests
+2021-09-12T09:39:38.4160574Z       old_config = self.setup_databases(aliases=databases)
+2021-09-12T09:39:38.4162619Z     File "/usr/local/lib/python3.8/dist-packages/django/test/runner.py", line 614, in setup_databases
+2021-09-12T09:39:38.4164333Z       return _setup_databases(
+2021-09-12T09:39:38.4166163Z     File "/usr/local/lib/python3.8/dist-packages/django/test/utils.py", line 170, in setup_databases
+2021-09-12T09:39:38.4167854Z       connection.creation.create_test_db(
+2021-09-12T09:39:38.4170267Z     File "/usr/local/lib/python3.8/dist-packages/django/db/backends/base/creation.py", line 55, in create_test_db
+2021-09-12T09:39:38.4171774Z       self._create_test_db(verbosity, autoclobber, keepdb)
+2021-09-12T09:39:38.4172983Z     File "/usr/local/lib/python3.8/dist-packages/django/db/backends/base/creation.py", line 176, in _create_test_db
+2021-09-12T09:39:38.4173847Z       with self._nodb_cursor() as cursor:
+2021-09-12T09:39:38.4174523Z     File "/usr/lib/python3.8/contextlib.py", line 115, in __enter__
+2021-09-12T09:39:38.4175466Z       raise RuntimeError("generator didn't yield") from None
+2021-09-12T09:39:38.4176331Z   RuntimeError: generator didn't yield
+2021-09-12T09:39:38.4848158Z   
+2021-09-12T09:39:38.4851272Z [31m❌ tests[39m
+2021-09-12T09:39:38.4854132Z ::error::Error: Exit with code: 1 and signal: null
+2021-09-12T09:39:38.4854828Z 
+2021-09-12T09:39:38.4857717Z ::24d5f29c-da3c-468b-ac4e-2779be914369::
+2021-09-12T09:39:38.4880568Z   

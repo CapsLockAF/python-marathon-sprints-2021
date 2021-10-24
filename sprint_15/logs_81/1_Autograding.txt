@@ -1,0 +1,290 @@
+2021-09-12T09:39:07.6444549Z Found online and idle hosted runner in the current repository's organization account that matches the required labels: 'ubuntu-latest'
+2021-09-12T09:39:07.7335569Z Waiting for a Hosted runner in the 'organization' to pick this job...
+2021-09-12T09:39:07.9844715Z Job is waiting for a hosted runner to come online.
+2021-09-12T09:39:11.6154442Z Job is about to start running on the hosted runner: Hosted Agent (hosted)
+2021-09-12T09:39:15.3006532Z Current runner version: '2.281.1'
+2021-09-12T09:39:15.3049689Z ##[group]Operating System
+2021-09-12T09:39:15.3050704Z Ubuntu
+2021-09-12T09:39:15.3051244Z 20.04.3
+2021-09-12T09:39:15.3051710Z LTS
+2021-09-12T09:39:15.3052274Z ##[endgroup]
+2021-09-12T09:39:15.3052880Z ##[group]Virtual Environment
+2021-09-12T09:39:15.3053671Z Environment: ubuntu-20.04
+2021-09-12T09:39:15.3054329Z Version: 20210906.1
+2021-09-12T09:39:15.3057455Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20210906.1/images/linux/Ubuntu2004-README.md
+2021-09-12T09:39:15.3059074Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F20210906.1
+2021-09-12T09:39:15.3060059Z ##[endgroup]
+2021-09-12T09:39:15.3060832Z ##[group]Virtual Environment Provisioner
+2021-09-12T09:39:15.3061601Z 1.0.0.0-master-20210816-1
+2021-09-12T09:39:15.3062180Z ##[endgroup]
+2021-09-12T09:39:15.3064494Z ##[group]GITHUB_TOKEN Permissions
+2021-09-12T09:39:15.3065939Z Actions: write
+2021-09-12T09:39:15.3066523Z Checks: write
+2021-09-12T09:39:15.3067078Z Contents: write
+2021-09-12T09:39:15.3067636Z Deployments: write
+2021-09-12T09:39:15.3068285Z Discussions: write
+2021-09-12T09:39:15.3068810Z Issues: write
+2021-09-12T09:39:15.3069365Z Metadata: read
+2021-09-12T09:39:15.3069928Z Packages: write
+2021-09-12T09:39:15.3070492Z PullRequests: write
+2021-09-12T09:39:15.3071199Z RepositoryProjects: write
+2021-09-12T09:39:15.3071845Z SecurityEvents: write
+2021-09-12T09:39:15.3072453Z Statuses: write
+2021-09-12T09:39:15.3073074Z ##[endgroup]
+2021-09-12T09:39:15.3076597Z Prepare workflow directory
+2021-09-12T09:39:15.3757425Z Prepare all required actions
+2021-09-12T09:39:15.3769172Z Getting action download info
+2021-09-12T09:39:15.5778384Z Download action repository 'actions/checkout@v2' (SHA:5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f)
+2021-09-12T09:39:17.3423540Z Download action repository 'education/autograding@v1' (SHA:7f45625ad05fb704b54c403882a713e58a92fbb5)
+2021-09-12T09:39:17.7257724Z ##[group]Run actions/checkout@v2
+2021-09-12T09:39:17.7258494Z with:
+2021-09-12T09:39:17.7259199Z   repository: PythonMarathon001/orm-om5-s15-team6
+2021-09-12T09:39:17.7260472Z   token: ***
+2021-09-12T09:39:17.7260991Z   ssh-strict: true
+2021-09-12T09:39:17.7261617Z   persist-credentials: true
+2021-09-12T09:39:17.7262225Z   clean: true
+2021-09-12T09:39:17.7262731Z   fetch-depth: 1
+2021-09-12T09:39:17.7263247Z   lfs: false
+2021-09-12T09:39:17.7263750Z   submodules: false
+2021-09-12T09:39:17.7264287Z ##[endgroup]
+2021-09-12T09:39:17.9853066Z Syncing repository: PythonMarathon001/orm-om5-s15-team6
+2021-09-12T09:39:17.9861131Z ##[group]Getting Git version info
+2021-09-12T09:39:17.9880054Z Working directory is '/home/runner/work/orm-om5-s15-team6/orm-om5-s15-team6'
+2021-09-12T09:39:17.9920546Z [command]/usr/bin/git version
+2021-09-12T09:39:18.0078179Z git version 2.33.0
+2021-09-12T09:39:18.0101961Z ##[endgroup]
+2021-09-12T09:39:18.0107930Z Deleting the contents of '/home/runner/work/orm-om5-s15-team6/orm-om5-s15-team6'
+2021-09-12T09:39:18.0112875Z ##[group]Initializing the repository
+2021-09-12T09:39:18.0116575Z [command]/usr/bin/git init /home/runner/work/orm-om5-s15-team6/orm-om5-s15-team6
+2021-09-12T09:39:18.0191934Z hint: Using 'master' as the name for the initial branch. This default branch name
+2021-09-12T09:39:18.0193212Z hint: is subject to change. To configure the initial branch name to use in all
+2021-09-12T09:39:18.0194260Z hint: of your new repositories, which will suppress this warning, call:
+2021-09-12T09:39:18.0195034Z hint: 
+2021-09-12T09:39:18.0195991Z hint: 	git config --global init.defaultBranch <name>
+2021-09-12T09:39:18.0196726Z hint: 
+2021-09-12T09:39:18.0197673Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2021-09-12T09:39:18.0198922Z hint: 'development'. The just-created branch can be renamed via this command:
+2021-09-12T09:39:18.0199727Z hint: 
+2021-09-12T09:39:18.0200448Z hint: 	git branch -m <name>
+2021-09-12T09:39:18.0210128Z Initialized empty Git repository in /home/runner/work/orm-om5-s15-team6/orm-om5-s15-team6/.git/
+2021-09-12T09:39:18.0223785Z [command]/usr/bin/git remote add origin https://github.com/PythonMarathon001/orm-om5-s15-team6
+2021-09-12T09:39:18.0262517Z ##[endgroup]
+2021-09-12T09:39:18.0263983Z ##[group]Disabling automatic garbage collection
+2021-09-12T09:39:18.0267012Z [command]/usr/bin/git config --local gc.auto 0
+2021-09-12T09:39:18.0303622Z ##[endgroup]
+2021-09-12T09:39:18.0309065Z ##[group]Setting up auth
+2021-09-12T09:39:18.0315551Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-09-12T09:39:18.0348114Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-09-12T09:39:18.0751093Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-09-12T09:39:18.0784821Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-09-12T09:39:18.1015964Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2021-09-12T09:39:18.1063050Z ##[endgroup]
+2021-09-12T09:39:18.1064910Z ##[group]Fetching the repository
+2021-09-12T09:39:18.1072022Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +451ddff3885b4d5c81a34d3c892f16d9f845cd43:refs/remotes/origin/fix_develop
+2021-09-12T09:39:18.4443369Z remote: Enumerating objects: 52, done.        
+2021-09-12T09:39:18.4504721Z remote: Counting objects:   1% (1/52)        
+2021-09-12T09:39:18.4505563Z remote: Counting objects:   3% (2/52)        
+2021-09-12T09:39:18.4506337Z remote: Counting objects:   5% (3/52)        
+2021-09-12T09:39:18.4507047Z remote: Counting objects:   7% (4/52)        
+2021-09-12T09:39:18.4508016Z remote: Counting objects:   9% (5/52)        
+2021-09-12T09:39:18.4508744Z remote: Counting objects:  11% (6/52)        
+2021-09-12T09:39:18.4509435Z remote: Counting objects:  13% (7/52)        
+2021-09-12T09:39:18.4510126Z remote: Counting objects:  15% (8/52)        
+2021-09-12T09:39:18.4510805Z remote: Counting objects:  17% (9/52)        
+2021-09-12T09:39:18.4511498Z remote: Counting objects:  19% (10/52)        
+2021-09-12T09:39:18.4512197Z remote: Counting objects:  21% (11/52)        
+2021-09-12T09:39:18.4512877Z remote: Counting objects:  23% (12/52)        
+2021-09-12T09:39:18.4513566Z remote: Counting objects:  25% (13/52)        
+2021-09-12T09:39:18.4514256Z remote: Counting objects:  26% (14/52)        
+2021-09-12T09:39:18.4516196Z remote: Counting objects:  28% (15/52)        
+2021-09-12T09:39:18.4516993Z remote: Counting objects:  30% (16/52)        
+2021-09-12T09:39:18.4517677Z remote: Counting objects:  32% (17/52)        
+2021-09-12T09:39:18.4518406Z remote: Counting objects:  34% (18/52)        
+2021-09-12T09:39:18.4519107Z remote: Counting objects:  36% (19/52)        
+2021-09-12T09:39:18.4519801Z remote: Counting objects:  38% (20/52)        
+2021-09-12T09:39:18.4520490Z remote: Counting objects:  40% (21/52)        
+2021-09-12T09:39:18.4521175Z remote: Counting objects:  42% (22/52)        
+2021-09-12T09:39:18.4521849Z remote: Counting objects:  44% (23/52)        
+2021-09-12T09:39:18.4522542Z remote: Counting objects:  46% (24/52)        
+2021-09-12T09:39:18.4523290Z remote: Counting objects:  48% (25/52)        
+2021-09-12T09:39:18.4523969Z remote: Counting objects:  50% (26/52)        
+2021-09-12T09:39:18.4524664Z remote: Counting objects:  51% (27/52)        
+2021-09-12T09:39:18.4525336Z remote: Counting objects:  53% (28/52)        
+2021-09-12T09:39:18.4526026Z remote: Counting objects:  55% (29/52)        
+2021-09-12T09:39:18.4526722Z remote: Counting objects:  57% (30/52)        
+2021-09-12T09:39:18.4527396Z remote: Counting objects:  59% (31/52)        
+2021-09-12T09:39:18.4528097Z remote: Counting objects:  61% (32/52)        
+2021-09-12T09:39:18.4530414Z remote: Counting objects:  63% (33/52)        
+2021-09-12T09:39:18.4531171Z remote: Counting objects:  65% (34/52)        
+2021-09-12T09:39:18.4531873Z remote: Counting objects:  67% (35/52)        
+2021-09-12T09:39:18.4532567Z remote: Counting objects:  69% (36/52)        
+2021-09-12T09:39:18.4533252Z remote: Counting objects:  71% (37/52)        
+2021-09-12T09:39:18.4533942Z remote: Counting objects:  73% (38/52)        
+2021-09-12T09:39:18.4534631Z remote: Counting objects:  75% (39/52)        
+2021-09-12T09:39:18.4535314Z remote: Counting objects:  76% (40/52)        
+2021-09-12T09:39:18.4536018Z remote: Counting objects:  78% (41/52)        
+2021-09-12T09:39:18.4536695Z remote: Counting objects:  80% (42/52)        
+2021-09-12T09:39:18.4537395Z remote: Counting objects:  82% (43/52)        
+2021-09-12T09:39:18.4538091Z remote: Counting objects:  84% (44/52)        
+2021-09-12T09:39:18.4538794Z remote: Counting objects:  86% (45/52)        
+2021-09-12T09:39:18.4539494Z remote: Counting objects:  88% (46/52)        
+2021-09-12T09:39:18.4540201Z remote: Counting objects:  90% (47/52)        
+2021-09-12T09:39:18.4540884Z remote: Counting objects:  92% (48/52)        
+2021-09-12T09:39:18.4541583Z remote: Counting objects:  94% (49/52)        
+2021-09-12T09:39:18.4542280Z remote: Counting objects:  96% (50/52)        
+2021-09-12T09:39:18.4542959Z remote: Counting objects:  98% (51/52)        
+2021-09-12T09:39:18.4543660Z remote: Counting objects: 100% (52/52)        
+2021-09-12T09:39:18.4544377Z remote: Counting objects: 100% (52/52), done.        
+2021-09-12T09:39:18.4545125Z remote: Compressing objects:   2% (1/41)        
+2021-09-12T09:39:18.4545880Z remote: Compressing objects:   4% (2/41)        
+2021-09-12T09:39:18.4546614Z remote: Compressing objects:   7% (3/41)        
+2021-09-12T09:39:18.4547363Z remote: Compressing objects:   9% (4/41)        
+2021-09-12T09:39:18.4548109Z remote: Compressing objects:  12% (5/41)        
+2021-09-12T09:39:18.4548989Z remote: Compressing objects:  14% (6/41)        
+2021-09-12T09:39:18.4549763Z remote: Compressing objects:  17% (7/41)        
+2021-09-12T09:39:18.4550511Z remote: Compressing objects:  19% (8/41)        
+2021-09-12T09:39:18.4551235Z remote: Compressing objects:  21% (9/41)        
+2021-09-12T09:39:18.4551986Z remote: Compressing objects:  24% (10/41)        
+2021-09-12T09:39:18.4552738Z remote: Compressing objects:  26% (11/41)        
+2021-09-12T09:39:18.4553713Z remote: Compressing objects:  29% (12/41)        
+2021-09-12T09:39:18.4554449Z remote: Compressing objects:  31% (13/41)        
+2021-09-12T09:39:18.4555205Z remote: Compressing objects:  34% (14/41)        
+2021-09-12T09:39:18.4555936Z remote: Compressing objects:  36% (15/41)        
+2021-09-12T09:39:18.4556687Z remote: Compressing objects:  39% (16/41)        
+2021-09-12T09:39:18.4557473Z remote: Compressing objects:  41% (17/41)        
+2021-09-12T09:39:18.4558196Z remote: Compressing objects:  43% (18/41)        
+2021-09-12T09:39:18.4558957Z remote: Compressing objects:  46% (19/41)        
+2021-09-12T09:39:18.4559707Z remote: Compressing objects:  48% (20/41)        
+2021-09-12T09:39:18.4560431Z remote: Compressing objects:  51% (21/41)        
+2021-09-12T09:39:18.4561173Z remote: Compressing objects:  53% (22/41)        
+2021-09-12T09:39:18.4561913Z remote: Compressing objects:  56% (23/41)        
+2021-09-12T09:39:18.4562642Z remote: Compressing objects:  58% (24/41)        
+2021-09-12T09:39:18.4563389Z remote: Compressing objects:  60% (25/41)        
+2021-09-12T09:39:18.4564129Z remote: Compressing objects:  63% (26/41)        
+2021-09-12T09:39:18.4564854Z remote: Compressing objects:  65% (27/41)        
+2021-09-12T09:39:18.4565604Z remote: Compressing objects:  68% (28/41)        
+2021-09-12T09:39:18.4566334Z remote: Compressing objects:  70% (29/41)        
+2021-09-12T09:39:18.4567076Z remote: Compressing objects:  73% (30/41)        
+2021-09-12T09:39:18.4567822Z remote: Compressing objects:  75% (31/41)        
+2021-09-12T09:39:18.4568555Z remote: Compressing objects:  78% (32/41)        
+2021-09-12T09:39:18.4569737Z remote: Compressing objects:  80% (33/41)        
+2021-09-12T09:39:18.4570490Z remote: Compressing objects:  82% (34/41)        
+2021-09-12T09:39:18.4571214Z remote: Compressing objects:  85% (35/41)        
+2021-09-12T09:39:18.4571960Z remote: Compressing objects:  87% (36/41)        
+2021-09-12T09:39:18.4572701Z remote: Compressing objects:  90% (37/41)        
+2021-09-12T09:39:18.4573421Z remote: Compressing objects:  92% (38/41)        
+2021-09-12T09:39:18.4574164Z remote: Compressing objects:  95% (39/41)        
+2021-09-12T09:39:18.4574916Z remote: Compressing objects:  97% (40/41)        
+2021-09-12T09:39:18.4575642Z remote: Compressing objects: 100% (41/41)        
+2021-09-12T09:39:18.4576418Z remote: Compressing objects: 100% (41/41), done.        
+2021-09-12T09:39:18.4577929Z remote: Total 52 (delta 11), reused 32 (delta 9), pack-reused 0        
+2021-09-12T09:39:18.4579237Z From https://github.com/PythonMarathon001/orm-om5-s15-team6
+2021-09-12T09:39:18.4580704Z  * [new ref]         451ddff3885b4d5c81a34d3c892f16d9f845cd43 -> origin/fix_develop
+2021-09-12T09:39:18.4582296Z ##[endgroup]
+2021-09-12T09:39:18.4583535Z ##[group]Determining the checkout info
+2021-09-12T09:39:18.4584727Z ##[endgroup]
+2021-09-12T09:39:18.4585879Z ##[group]Checking out the ref
+2021-09-12T09:39:18.4587054Z [command]/usr/bin/git checkout --progress --force -B fix_develop refs/remotes/origin/fix_develop
+2021-09-12T09:39:18.4588203Z Switched to a new branch 'fix_develop'
+2021-09-12T09:39:18.4589303Z Branch 'fix_develop' set up to track remote branch 'fix_develop' from 'origin'.
+2021-09-12T09:39:18.4590633Z ##[endgroup]
+2021-09-12T09:39:18.4591451Z [command]/usr/bin/git log -1 --format='%H'
+2021-09-12T09:39:18.4592476Z '451ddff3885b4d5c81a34d3c892f16d9f845cd43'
+2021-09-12T09:39:18.4679149Z ##[group]Run education/autograding@v1
+2021-09-12T09:39:18.4679696Z with:
+2021-09-12T09:39:18.4680632Z   token: ***
+2021-09-12T09:39:18.4681054Z ##[endgroup]
+2021-09-12T09:39:19.3452068Z 
+2021-09-12T09:39:19.3456893Z ::stop-commands::24d5f29c-da3c-468b-ac4e-2779be914369
+2021-09-12T09:39:19.3458251Z 
+2021-09-12T09:39:19.3460567Z [36m📝 tests[39m
+2021-09-12T09:39:19.3461412Z 
+2021-09-12T09:39:19.3462064Z 
+2021-09-12T09:39:20.9086912Z   Collecting setuptools
+2021-09-12T09:39:20.9528363Z     Downloading setuptools-58.0.4-py3-none-any.whl (816 kB)
+2021-09-12T09:39:21.2053647Z ERROR: launchpadlib 1.10.13 requires testresources, which is not installed.
+2021-09-12T09:39:21.2072063Z   Installing collected packages: setuptools
+2021-09-12T09:39:21.2075413Z     Attempting uninstall: setuptools
+2021-09-12T09:39:21.2078387Z       Found existing installation: setuptools 45.2.0
+2021-09-12T09:39:21.2082938Z       Not uninstalling setuptools at /usr/lib/python3/dist-packages, outside environment /usr
+2021-09-12T09:39:21.2102699Z       Can't uninstall 'setuptools'. No files were found to uninstall.
+2021-09-12T09:39:21.6341190Z   Successfully installed setuptools-58.0.4
+2021-09-12T09:39:23.1679888Z   Collecting pip
+2021-09-12T09:39:23.2620803Z     Using cached pip-21.2.4-py3-none-any.whl (1.6 MB)
+2021-09-12T09:39:23.4933347Z   Installing collected packages: pip
+2021-09-12T09:39:23.4958061Z     Attempting uninstall: pip
+2021-09-12T09:39:23.4959829Z       Found existing installation: pip 20.0.2
+2021-09-12T09:39:23.4962675Z       Not uninstalling pip at /usr/lib/python3/dist-packages, outside environment /usr
+2021-09-12T09:39:23.4965001Z       Can't uninstall 'pip'. No files were found to uninstall.
+2021-09-12T09:39:24.5137387Z   Successfully installed pip-21.2.4
+2021-09-12T09:39:25.8415938Z   Collecting asgiref==3.2.10
+2021-09-12T09:39:25.8434503Z     Downloading asgiref-3.2.10-py3-none-any.whl (19 kB)
+2021-09-12T09:39:25.8436020Z   Collecting coverage==5.3
+2021-09-12T09:39:25.8438223Z     Downloading coverage-5.3-cp38-cp38-manylinux1_x86_64.whl (230 kB)
+2021-09-12T09:39:25.8439062Z   Collecting Django==3.1.1
+2021-09-12T09:39:25.8440132Z     Downloading Django-3.1.1-py3-none-any.whl (7.8 MB)
+2021-09-12T09:39:26.1174193Z   Collecting psycopg2==2.9.1
+2021-09-12T09:39:26.1346924Z     Downloading psycopg2-2.9.1.tar.gz (379 kB)
+2021-09-12T09:39:26.6854766Z   Collecting pytz==2020.1
+2021-09-12T09:39:26.6914633Z     Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+2021-09-12T09:39:26.7366373Z   Collecting sqlparse==0.3.1
+2021-09-12T09:39:26.7453113Z     Downloading sqlparse-0.3.1-py2.py3-none-any.whl (40 kB)
+2021-09-12T09:39:26.7986626Z   Building wheels for collected packages: psycopg2
+2021-09-12T09:39:26.8011072Z     Building wheel for psycopg2 (setup.py): started
+2021-09-12T09:39:35.5107497Z     Building wheel for psycopg2 (setup.py): finished with status 'done'
+2021-09-12T09:39:35.5151606Z     Created wheel for psycopg2: filename=psycopg2-2.9.1-cp38-cp38-linux_x86_64.whl size=556673 sha256=2e8a721bece7ab174e7dabed4b37f4dbba3481bf3a7c0b5dfbd879b4462c1cb3
+2021-09-12T09:39:35.5155633Z     Stored in directory: /root/.cache/pip/wheels/65/eb/f9/74b53754e764a113930b709eb319a3bd5b681889b5ffbf1aab
+2021-09-12T09:39:35.5203101Z   Successfully built psycopg2
+2021-09-12T09:39:35.7034122Z   Installing collected packages: sqlparse, pytz, asgiref, psycopg2, Django, coverage
+2021-09-12T09:39:37.6679558Z   WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2021-09-12T09:39:37.6681661Z   Successfully installed Django-3.1.1 asgiref-3.2.10 coverage-5.3 psycopg2-2.9.1 pytz-2020.1 sqlparse-0.3.1
+2021-09-12T09:39:37.8620686Z   
+2021-09-12T09:39:38.2691359Z   Creating test database for alias 'default'...
+2021-09-12T09:39:38.2694271Z   /usr/local/lib/python3.8/dist-packages/django/db/backends/postgresql/base.py:304: RuntimeWarning: Normally Django will use a connection to the 'postgres' database to avoid running initialization queries against the production database when it's not needed (for example, when running tests). Django was unable to create a connection to the 'postgres' database and will use the first PostgreSQL database instead.
+2021-09-12T09:39:38.2696293Z     warnings.warn(
+2021-09-12T09:39:38.4131648Z   Traceback (most recent call last):
+2021-09-12T09:39:38.4132772Z     File "manage.py", line 22, in <module>
+2021-09-12T09:39:38.4133610Z       main()
+2021-09-12T09:39:38.4134397Z     File "manage.py", line 18, in main
+2021-09-12T09:39:38.4135419Z       execute_from_command_line(sys.argv)
+2021-09-12T09:39:38.4137985Z     File "/usr/local/lib/python3.8/dist-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+2021-09-12T09:39:38.4139548Z       utility.execute()
+2021-09-12T09:39:38.4141423Z     File "/usr/local/lib/python3.8/dist-packages/django/core/management/__init__.py", line 395, in execute
+2021-09-12T09:39:38.4143111Z       self.fetch_command(subcommand).run_from_argv(self.argv)
+2021-09-12T09:39:38.4145274Z     File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/test.py", line 23, in run_from_argv
+2021-09-12T09:39:38.4146738Z       super().run_from_argv(argv)
+2021-09-12T09:39:38.4148584Z     File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 330, in run_from_argv
+2021-09-12T09:39:38.4150104Z       self.execute(*args, **cmd_options)
+2021-09-12T09:39:38.4152017Z     File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 371, in execute
+2021-09-12T09:39:38.4153533Z       output = self.handle(*args, **options)
+2021-09-12T09:39:38.4155497Z     File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/test.py", line 53, in handle
+2021-09-12T09:39:38.4157122Z       failures = test_runner.run_tests(test_labels)
+2021-09-12T09:39:38.4159006Z     File "/usr/local/lib/python3.8/dist-packages/django/test/runner.py", line 695, in run_tests
+2021-09-12T09:39:38.4160591Z       old_config = self.setup_databases(aliases=databases)
+2021-09-12T09:39:38.4162631Z     File "/usr/local/lib/python3.8/dist-packages/django/test/runner.py", line 614, in setup_databases
+2021-09-12T09:39:38.4164343Z       return _setup_databases(
+2021-09-12T09:39:38.4166176Z     File "/usr/local/lib/python3.8/dist-packages/django/test/utils.py", line 170, in setup_databases
+2021-09-12T09:39:38.4167863Z       connection.creation.create_test_db(
+2021-09-12T09:39:38.4170284Z     File "/usr/local/lib/python3.8/dist-packages/django/db/backends/base/creation.py", line 55, in create_test_db
+2021-09-12T09:39:38.4171779Z       self._create_test_db(verbosity, autoclobber, keepdb)
+2021-09-12T09:39:38.4172990Z     File "/usr/local/lib/python3.8/dist-packages/django/db/backends/base/creation.py", line 176, in _create_test_db
+2021-09-12T09:39:38.4173852Z       with self._nodb_cursor() as cursor:
+2021-09-12T09:39:38.4174528Z     File "/usr/lib/python3.8/contextlib.py", line 115, in __enter__
+2021-09-12T09:39:38.4175479Z       raise RuntimeError("generator didn't yield") from None
+2021-09-12T09:39:38.4176338Z   RuntimeError: generator didn't yield
+2021-09-12T09:39:38.4848508Z   
+2021-09-12T09:39:38.4851299Z [31m❌ tests[39m
+2021-09-12T09:39:38.4854146Z ::error::Error: Exit with code: 1 and signal: null
+2021-09-12T09:39:38.4854838Z 
+2021-09-12T09:39:38.4857732Z ::24d5f29c-da3c-468b-ac4e-2779be914369::
+2021-09-12T09:39:38.4880584Z   
+2021-09-12T09:39:38.4974843Z Post job cleanup.
+2021-09-12T09:39:38.5991249Z [command]/usr/bin/git version
+2021-09-12T09:39:38.6043936Z git version 2.33.0
+2021-09-12T09:39:38.6077309Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-09-12T09:39:38.6113893Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-09-12T09:39:38.6353115Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-09-12T09:39:38.6370397Z http.https://github.com/.extraheader
+2021-09-12T09:39:38.6380566Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2021-09-12T09:39:38.6413893Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-09-12T09:39:38.6694544Z Cleaning up orphan processes

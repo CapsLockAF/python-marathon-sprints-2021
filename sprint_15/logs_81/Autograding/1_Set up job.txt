@@ -1,0 +1,34 @@
+2021-09-12T09:39:15.3005920Z Current runner version: '2.281.1'
+2021-09-12T09:39:15.3049647Z ##[group]Operating System
+2021-09-12T09:39:15.3050691Z Ubuntu
+2021-09-12T09:39:15.3051237Z 20.04.3
+2021-09-12T09:39:15.3051703Z LTS
+2021-09-12T09:39:15.3052266Z ##[endgroup]
+2021-09-12T09:39:15.3052872Z ##[group]Virtual Environment
+2021-09-12T09:39:15.3053663Z Environment: ubuntu-20.04
+2021-09-12T09:39:15.3054322Z Version: 20210906.1
+2021-09-12T09:39:15.3057418Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20210906.1/images/linux/Ubuntu2004-README.md
+2021-09-12T09:39:15.3059065Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F20210906.1
+2021-09-12T09:39:15.3060051Z ##[endgroup]
+2021-09-12T09:39:15.3060824Z ##[group]Virtual Environment Provisioner
+2021-09-12T09:39:15.3061594Z 1.0.0.0-master-20210816-1
+2021-09-12T09:39:15.3062173Z ##[endgroup]
+2021-09-12T09:39:15.3064417Z ##[group]GITHUB_TOKEN Permissions
+2021-09-12T09:39:15.3065841Z Actions: write
+2021-09-12T09:39:15.3066516Z Checks: write
+2021-09-12T09:39:15.3067073Z Contents: write
+2021-09-12T09:39:15.3067629Z Deployments: write
+2021-09-12T09:39:15.3068278Z Discussions: write
+2021-09-12T09:39:15.3068804Z Issues: write
+2021-09-12T09:39:15.3069359Z Metadata: read
+2021-09-12T09:39:15.3069922Z Packages: write
+2021-09-12T09:39:15.3070486Z PullRequests: write
+2021-09-12T09:39:15.3071191Z RepositoryProjects: write
+2021-09-12T09:39:15.3071839Z SecurityEvents: write
+2021-09-12T09:39:15.3072447Z Statuses: write
+2021-09-12T09:39:15.3073067Z ##[endgroup]
+2021-09-12T09:39:15.3076567Z Prepare workflow directory
+2021-09-12T09:39:15.3757389Z Prepare all required actions
+2021-09-12T09:39:15.3769121Z Getting action download info
+2021-09-12T09:39:15.5778295Z Download action repository 'actions/checkout@v2' (SHA:5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f)
+2021-09-12T09:39:17.3423505Z Download action repository 'education/autograding@v1' (SHA:7f45625ad05fb704b54c403882a713e58a92fbb5)
